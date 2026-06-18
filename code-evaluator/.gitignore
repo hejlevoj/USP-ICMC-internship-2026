@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Rust
+target/
+Cargo.lock
+
+# C/C++
+*.o
+*.out
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Backup files
+*.backup
+*~
+
+# VSCode/IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Ignore config backups
+*.json.backup
+
+# Ignore analysis output
+analysis-before-after-autofix/
+
+# Ignore sample files
+*.sample

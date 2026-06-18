@@ -1,0 +1,140 @@
+{
+  "keywords": {
+    "match": 6,
+    "?": 5,
+    "mut": 5,
+    "ref": 4,
+    "Box": 5,
+    "Rc": 5,
+    "Arc": 5,
+    "::": 4,
+    "!": 3,
+    "->": 2,
+    "expect": -2,
+    "unwrap": -5,
+    "panic!": -10,
+    "unsafe": -20,
+    "macro_rules!": -1
+  },
+  "categories_multipliers": {
+    "memory_safety": 10.0,
+    "undefined_behavior": 8.0,
+    "logic_errors": 5.0,
+    "type_safety": 3.0,
+    "control_flow_warnings": 2.0,
+    "style_idiom": 0.5
+  },
+  "linter_warnings": {
+    "categories": {
+      "memory_safety": {
+        "clippy::uninit_vec": 100,
+        "clippy::large_stack_arrays": 90,
+        "clippy::mut_from_ref": 95,
+        "clippy::boxed_local": 70,
+        "clippy::ptr_arg": 80,
+        "clippy::trivially_copy_pass_by_ref": 70
+      },
+      "undefined_behavior": {
+        "clippy::not_unsafe_ptr_arg_deref": 100,
+        "clippy::transmute_ptr_to_ptr": 100,
+        "clippy::cast_ptr_alignment": 95,
+        "clippy::cast_ref_to_mut": 95,
+        "clippy::missing_transmute_annotations": 95,
+        "clippy::undocumented_unsafe_blocks": 90,
+        "clippy::ptr_as_ptr": 80
+      },
+      "type_safety": {
+        "clippy::float_cmp": 90,
+        "clippy::cast_sign_loss": 75,
+        "clippy::cast_possible_truncation": 70,
+        "clippy::cast_possible_wrap": 70,
+        "clippy::cast_precision_loss": 65,
+        "clippy::useless_conversion": 50,
+        "clippy::char_lit_as_u8": 45,
+        "clippy::cast_lossless": 40
+      },
+      "control_flow_warnings": {
+        "clippy::never_loop": 95,
+        "clippy::while_immutable_condition": 90,
+        "clippy::needless_range_loop": 90,
+        "clippy::while_let_on_iterator": 85,
+        "clippy::explicit_counter_loop": 75,
+        "clippy::collapsible_if": 60,
+        "clippy::needless_continue": 35,
+        "clippy::needless_ifs": 20
+      },
+      "logic_errors": {
+        "clippy::unused_io_amount": 100,
+        "clippy::absurd_extreme_comparisons": 95,
+        "clippy::eq_op": 90,
+        "clippy::if_same_then_else": 85,
+        "clippy::match_same_arms": 85,
+        "clippy::manual_div_ceil": 75,
+        "clippy::manual_memcpy": 85,
+        "clippy::manual_swap": 85
+      },
+      "style_idiom": {
+        "clippy::should_implement_trait": 85,
+        "clippy::redundant_clone": 85,
+        "clippy::missing_panics_doc": 80,
+        "clippy::missing_errors_doc": 80,
+        "clippy::new_without_default": 75,
+        "clippy::needless_borrow": 75,
+        "clippy::match_like_matches_macro": 65,
+        "clippy::uninlined_format_args": 25
+      }
+    }
+  },
+  "compiler_warnings": {
+    "categories": {
+      "memory_safety": {
+        "invalid_reference_casting": 100,
+        "mutable_transmutes": 100,
+        "static_mut_refs": 95,
+        "invalid_value": 95,
+        "E0133": 95,
+        "unnecessary_transmutes": 90
+      },
+      "undefined_behavior": {
+        "deref_nullptr": 100,
+        "unconditional_recursion": 95,
+        "let_underscore_lock": 90,
+        "invalid_null_arguments": 85,
+        "enum_intrinsics_non_enums": 80,
+        "unused_unsafe": 30
+      },
+      "type_safety": {
+        "improper_ctypes": 95,
+        "clashing_extern_declarations": 90,
+        "non_local_definitions": 65,
+        "mismatched_lifetime_syntaxes": 60,
+        "type_alias_bounds": 50,
+        "no_mangle_const_items": 75
+      },
+      "control_flow_warnings": {
+        "while_true": 90,
+        "unreachable_code": 75,
+        "unreachable_patterns": 75,
+        "for_loops_over_fallibles": 70,
+        "irrefutable_let_patterns": 50,
+        "unused_parens": 80
+      },
+      "logic_errors": {
+        "unused_must_use": 95,
+        "arithmetic_overflow": 90,
+        "let_underscore_drop": 85,
+        "suspicious_double_ref_op": 80,
+        "unused_assignments": 70,
+        "noop_method_call": 60,
+        "overflowing_literals": 90
+      },
+      "style_idiom": {
+        "deprecated": 60,
+        "unused_mut": 45,
+        "unused_variables": 40,
+        "dead_code": 30,
+        "unused_imports": 20
+      }
+    }
+  }
+}

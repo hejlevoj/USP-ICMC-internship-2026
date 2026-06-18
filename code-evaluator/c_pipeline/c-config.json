@@ -1,0 +1,152 @@
+{
+  "keywords": {
+    "malloc": 6,
+    "calloc": 6,
+    "realloc": 6,
+    "free": 6,
+    "->": 5,
+    "*": 4,
+    "&": 4,
+    "volatile": 5,
+    "restrict": 5,
+    "extern": 3,
+    "struct": 3,
+    "union": 5,
+    "sizeof": 3,
+    "#define": -3,
+    "atoi": -5,
+    "goto": -8,
+    "gets": -15
+  },
+  
+  "categories_multipliers": {
+    "critical_safety": 10,
+    "data_integrity": 5,
+    "program_logic": 3,
+    "language_standards_compliance": 2,
+    "control_flow_integrity": 1.5,
+    "maintenance_and_style": 0.2
+  },
+  
+  "linter_warnings": {
+    "categories": {
+      "critical_safety": {
+        "clang-analyzer-unix.Malloc": 100,
+        "clang-analyzer-core.NullDereference": 100,
+        "clang-analyzer-security.insecureAPI.gets": 100,
+        "clang-analyzer-core.uninitialized.ArraySubscript": 100,
+        "clang-analyzer-core.StackAddressEscape": 90,
+        "clang-analyzer-optin.taint.TaintedAlloc": 90,
+        "clang-analyzer-security.insecureAPI.strcpy": 80,
+        "bugprone-not-null-terminated-result": 90
+      },
+      "data_integrity": {
+        "clang-analyzer-core.DivideZero": 95,
+        "clang-analyzer-core.UndefinedBinaryOperatorResult": 90,
+        "clang-diagnostic-integer-overflow": 90,
+        "clang-diagnostic-unsequenced": 90,
+        "clang-analyzer-core.BitwiseShift": 90,
+        "bugprone-sizeof-expression": 85,
+        "clang-diagnostic-string-plus-int": 80,
+        "bugprone-implicit-widening-of-multiplication-result": 70
+      },
+      "program_logic": {
+        "bugprone-infinite-loop": 95,
+        "clang-diagnostic-return-type": 95,
+        "clang-diagnostic-memset-transposed-args": 85,
+        "bugprone-suspicious-semicolon": 80,
+        "clang-diagnostic-format": 80,
+        "concurrency-mt-unsafe": 75,
+        "bugprone-chained-comparison": 75,
+        "bugprone-assignment-in-if-condition": 65
+      },
+      "language_standards_compliance": {
+        "cert-env33-c": 90,
+        "cert-msc33-c": 80,
+        "cert-msc30-c": 70,
+        "cert-msc32-c": 70,
+        "cert-msc50-cpp": 70,
+        "cert-msc51-cpp": 70,
+        "clang-analyzer-optin.portability.UnixAPI": 50,
+        "hicpp-no-assembler": 30
+      },
+      "control_flow_integrity": {
+        "bugprone-branch-clone": 65,
+        "custom-goto-statement": 50,
+        "clang-analyzer-deadcode.DeadStores": 20,
+        "readability-misleading-indentation": 70,
+        "performance-no-int-to-ptr": 45,
+        "clang-diagnostic-dangling-else": 70
+      },
+      "maintenance_and_style": {
+        "cppcoreguidelines-init-variables": 35,
+        "cppcoreguidelines-avoid-non-const-global-variables": 40,
+        "readability-function-cognitive-complexity": 30,
+        "misc-unused-parameters": 30,
+        "performance-type-promotion-in-math-fn": 30,
+        "altera-struct-pack-align": 25,
+        "clang-analyzer-optin.performance.Padding": 25,
+        "altera-id-dependent-backward-branch": 20
+      }
+    }
+  },
+  "compiler_warnings": {
+    "categories": {
+      "critical_safety": {
+        "-Warray-bounds": 100,
+        "-Wuse-after-free": 100,
+        "-Wreturn-local-addr": 100,
+        "-Wnull-dereference": 95,
+        "-Wrestrict": 90,
+        "-Wnonnull": 85,
+        "-Wmain": 80
+      },
+      "language_standards_compliance": {
+        "-Wsequence-point": 100,
+        "-Wreturn-type": 95,
+        "-Wuninitialized": 90,
+        "-Wstrict-aliasing": 85,
+        "-Wimplicit-function-declaration": 85,
+        "-Wpedantic": 40,
+        "-Wtrigraphs": 25
+      },
+      "data_integrity": {
+        "-Wmemset-transposed-args": 95,
+        "-Wformat": 90,
+        "-Wformat-security": 90,
+        "-Wsizeof-pointer-memaccess": 85,
+        "-Wabsolute-value": 80,
+        "-Woverflow": 75,
+        "-Wsizeof-pointer-div": 75,
+        "-Wsign-compare": 60
+      },
+      "program_logic": {
+        "-Wxor-used-as-pow": 100,
+        "-Waddress": 95,
+        "-Wduplicated-cond": 80,
+        "-Wlogical-op": 75,
+        "-Wbool-compare": 70,
+        "-Wtautological-compare": 65,
+        "-Wint-in-bool-context": 60,
+        "-Warray-compare": 60
+      },
+      "control_flow_integrity": {
+        "-Wjump-misses-init": 80,
+        "-Wimplicit-fallthrough": 75,
+        "-Wmultistatement-macros": 70,
+        "-Wempty-body": 55,
+        "-Wdangling-else": 55,
+        "-Wunknown-pragmas": 35
+      },
+      "maintenance_and_style": {
+        "-Wshadow": 40,
+        "-Wparentheses": 35,
+        "-Wmissing-braces": 30,
+        "-Wunused-value": 25,
+        "-Wunused-variable": 10,
+        "-Wunused-parameter": 5,
+        "-Wunused-but-set-variable": 5
+      }
+    }
+  }
+}
