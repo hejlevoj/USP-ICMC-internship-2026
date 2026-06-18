@@ -1,4 +1,4 @@
-# USP Pipeline
+# Pipeline
 
 A static analysis pipeline for C and Rust source files. Normalizes code, evaluates quality metrics, and auto-fixes linter warnings.
 
